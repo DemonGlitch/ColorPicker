@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="1dp"
+	android:background="@drawable/popup_bg">
+
+	<LinearLayout
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="10dp">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:background="@drawable/popup_bg"
+			android:layout_marginBottom="5dp">
+
+			<ProgressBar
+				android:layout_width="match_parent"
+				style="?android:attr/progressBarStyleLarge"
+				android:layout_height="match_parent"
+				android:id="@+id/colorP"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="#ffffffff"
+				android:gravity="center"
+				android:id="@+id/color"
+				android:textSize="12sp"/>
+
+		</FrameLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_marginTop="5dp">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/popup_bg">
+
+				<com.github.demon.glitch.mixer.CircularSeekBar
+					style="@android:style/Widget.Material.ProgressBar.Horizontal"
+					android:layout_centerInParent="true"
+					android:layout_gravity="center"
+					android:background="@android:color/transparent"
+					android:maxHeight="2dp"
+					app:circle_color="#33000000"
+					app:circle_stroke_width="3"
+					app:pointer_halo_border_width="2.5"
+					app:pointer_halo_width="1.5"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/alphaSb"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="255"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/alphaTv"
+					android:gravity="center"/>
+
+			</FrameLayout>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0"
+				android:layout_marginLeft="5dp"
+				android:background="@drawable/popup_bg">
+
+				<com.github.demon.glitch.mixer.CircularSeekBar
+					style="@android:style/Widget.Material.ProgressBar.Horizontal"
+					android:layout_centerInParent="true"
+					android:layout_gravity="center"
+					android:background="@android:color/transparent"
+					android:maxHeight="2dp"
+					app:circle_color="#33000000"
+					app:circle_stroke_width="3"
+					app:pointer_halo_border_width="2.5"
+					app:pointer_halo_width="1.5"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/redSb"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="255"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:gravity="center"
+					android:id="@+id/redTv"/>
+
+			</FrameLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:layout_marginTop="10dp">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0"
+				android:background="@drawable/popup_bg"
+				android:layout_marginRight="5dp">
+
+				<com.github.demon.glitch.mixer.CircularSeekBar
+					style="@android:style/Widget.Material.ProgressBar.Horizontal"
+					android:layout_centerInParent="true"
+					android:layout_gravity="center"
+					android:background="@android:color/transparent"
+					android:maxHeight="2dp"
+					app:circle_color="#33000000"
+					app:circle_stroke_width="3"
+					app:pointer_halo_border_width="2.5"
+					app:pointer_halo_width="1.5"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/greenSb"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="255"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/greenTv"
+					android:gravity="center"/>
+
+			</FrameLayout>
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0"
+				android:background="@drawable/popup_bg"
+				android:layout_marginLeft="5dp">
+
+				<com.github.demon.glitch.mixer.CircularSeekBar
+					style="@android:style/Widget.Material.ProgressBar.Horizontal"
+					android:layout_centerInParent="true"
+					android:layout_gravity="center"
+					android:background="@android:color/transparent"
+					android:maxHeight="2dp"
+					app:circle_color="#33000000"
+					app:circle_stroke_width="3"
+					app:pointer_halo_border_width="2.5"
+					app:pointer_halo_width="1.5"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/blueSh"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="255"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/blueTv"
+					android:gravity="center"/>
+
+			</FrameLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginTop="10dp">
+
+			<Button
+				android:layout_width="match_parent"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="match_parent"
+				android:text="Close"
+				android:id="@+id/close"
+				android:layout_weight="1.0"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/popup_bg"/>
+
+			<Button
+				android:layout_width="match_parent"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="match_parent"
+				android:text="Done"
+				android:layout_weight="1.0"
+				android:id="@+id/done"
+				android:layout_marginLeft="5dp"
+				android:background="@drawable/popup_bg"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

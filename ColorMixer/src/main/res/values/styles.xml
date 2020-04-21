@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+		<style name="ColorMixerTheme" parent="@android:style/Theme.Material.Dialog">
+		<item name="android:windowBackground">@drawable/popup_bg</item>
+			<item name="android:attr/colorAccent">#ffffff</item>
+		</style>
+	</resources>
